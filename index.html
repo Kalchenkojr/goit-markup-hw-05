@@ -42,7 +42,7 @@
           <ul class="header-list list">
             <li class="header-item">
               <a
-                class="header-link link"
+                class="header-link current link"
                 href="./index.html"
                 >Studio</a
               >
@@ -87,7 +87,11 @@
           <h1 class="hero-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="hero-btn" type="button">
+          <button
+            class="hero-btn"
+            type="button"
+            data-modal-open
+          >
             Order Service
           </button>
         </div>
@@ -776,5 +780,25 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          type="button"
+          class="modal-close"
+          data-modal-close
+        >
+          <svg
+            class="modal-close-icon"
+            width="8"
+            height="8"
+          >
+            <use
+              href="./images/icons.svg#icon-modal-close"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
